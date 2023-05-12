@@ -1,0 +1,57 @@
+import
+import 'dart:io';
+
+void main(){
+    //cau1
+ print(" Nhap so can kiem tra: ");
+ int a = int.parse(stdin.readLineSync()!);
+ void ktchanle(){
+ if(a%2==0){
+ print("So $a la so chan")}
+ else {
+    print(" So $b la so le")
+ }
+ }
+ ktchanle();
+ print("Nhap ki tu can kiem tra: ");
+ String? str = stdin.readLineSync();
+void ktkitu(){
+     switch (str) {
+    case 'o':
+    case 'O':
+    case 'u':
+    case 'U':
+    case 'i':
+    case 'I':
+    case 'a':
+    case 'A':
+    case 'e':
+    case 'E':
+      print("Đay la nguyen am");
+      break;
+    default:
+      print("day la phu am");
+      break;
+    }
+  }
+  ktkitu();
+  print("Nhập số cần kiểm tra : ");
+  a = int.parse(stdin.readLineSync()!);
+  void kiemtraso(){
+    if(a==0){
+      print("Đây là số 0");
+    }
+    else if(a>0){
+      print("Đây là số dương");
+    }
+    else{
+      print("Đây là số âm");
+    }
+  }
+  kiemtraso();
+  print("Nhập tên của bạn : ");
+  String? ten = stdin.readLineSync();
+  for(int i = 0; i<100;i++){
+    print("$ten");
+  }
+}
